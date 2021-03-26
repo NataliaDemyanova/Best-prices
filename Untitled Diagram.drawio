@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2021-03-26T07:53:51.421Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 YaBrowser/21.2.4.172 Yowser/2.5 Safari/537.36" version="14.5.1" etag="wAMDEeHDnpaiAvXjvYuM" type="github"><diagram id="EMp8i1ytYOoWYOSHFc4I">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-26T08:08:21.632Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 YaBrowser/21.2.4.172 Yowser/2.5 Safari/537.36" etag="3TiAt4o0SxayfQHOcWKU" version="14.5.1" type="github">
+  <diagram id="EMp8i1ytYOoWYOSHFc4I" name="Page-1">
+    <mxGraphModel dx="868" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BPmMlELdBAgBM8hU0nrf-1" target="BPmMlELdBAgBM8hU0nrf-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="BPmMlELdBAgBM8hU0nrf-1" target="BPmMlELdBAgBM8hU0nrf-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="325" />
+              <mxPoint x="320" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-1" value="&lt;font color=&quot;#222222&quot; style=&quot;background-color: rgb(255 , 252 , 253)&quot;&gt;Пользователь&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="50" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-2" value="Администратор&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="470" width="50" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-4" value="Заказчик&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="50" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-11" value="Регистрируется&amp;nbsp;&lt;br style=&quot;font-size: 14px;&quot;&gt;в&lt;br style=&quot;font-size: 14px;&quot;&gt;системе" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=14;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BPmMlELdBAgBM8hU0nrf-13" value="Просмотр &lt;br style=&quot;font-size: 15px;&quot;&gt;каталога" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="390" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
