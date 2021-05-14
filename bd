@@ -1,0 +1,250 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.7
+-- Dumped by pg_dump version 12.7
+
+-- Started on 2021-05-15 02:03:52
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 1 (class 3079 OID 16384)
+-- Name: adminpack; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS adminpack WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2844 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION adminpack; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION adminpack IS 'administrative functions for PostgreSQL';
+
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- TOC entry 203 (class 1259 OID 16409)
+-- Name: buyer; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buyer (
+    id integer NOT NULL,
+    city text
+);
+
+
+ALTER TABLE public.buyer OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 32797)
+-- Name: city; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.city (
+    id integer NOT NULL,
+    lenta text,
+    metro text,
+    market text,
+    slay text,
+    pripay text
+);
+
+
+ALTER TABLE public.city OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 24576)
+-- Name: products; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.products (
+    id integer NOT NULL,
+    name text,
+    price integer
+);
+
+
+ALTER TABLE public.products OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 32792)
+-- Name: store; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.store (
+    id integer NOT NULL,
+    lenta integer,
+    metro integer,
+    market integer,
+    slay integer,
+    pripay integer
+);
+
+
+ALTER TABLE public.store OWNER TO postgres;
+
+--
+-- TOC entry 2835 (class 0 OID 16409)
+-- Dependencies: 203
+-- Data for Name: buyer; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.buyer (id, city) FROM stdin;
+1	Ља б­®пабЄ
+2	Њ®бЄў 
+3	ЏЁвҐа
+4	‚®«®Ј¤ 
+5	џа®б« ў«м
+6	…Ј®амҐўбЄ
+7	€аЄгвбЄ
+8	‚®а®­Ґ¦
+9	Љ § ­м
+10	ђ ¬Ґ­бЄ®Ґ
+11	ЏҐа¬м
+12	’ўҐам
+13	‘ ¬ а 
+14	Ћ¬бЄ
+15	€¦ҐўбЄ
+16	—Ґ«пЎЁ­бЄ
+17	ЏбЄ®ў
+18	Ѓап­бЄ
+19	—Ёв 
+20	Љ «Ё­Ё­Ја ¤
+\.
+
+
+--
+-- TOC entry 2838 (class 0 OID 32797)
+-- Dependencies: 206
+-- Data for Name: city; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.city (id, lenta, metro, market, slay, pripay) FROM stdin;
+1	Њ®бЄў 	ЏЁвҐа	’ўҐам	‘ ¬ а 	Њ®бЄў 
+2	ЏЁвҐа	Њ®бЄў 	‚®«®Ј¤ 	Ља б­®пабЄ	’ўҐам
+3	Љ § ­м	ђ ¬Ґ­бЄ®Ґ	€¦ҐўбЄ	ЏҐа¬м	Ћ¬бЄ
+4	…Ј®амҐўбЄ	Ѓап­бЄ	—Ёв 	Љ «Ё­Ё­Ја ¤	ЏбЄ®ў
+5	‚®а®­Ґ¦	€аЄгвбЄ	—Ґ«пЎЁ­бЄ	‚®«®Ј¤ 	‚®а®­Ґ¦
+6	Ѓап­бЄ	Ћ¬бЄ	ЏҐа¬м	’ўҐам	ЏЁвҐа
+\.
+
+
+--
+-- TOC entry 2836 (class 0 OID 24576)
+-- Dependencies: 204
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.products (id, name, price) FROM stdin;
+1	•«ҐЎ	25
+2	Њ®«®Є®	45
+3	ђлЎ 	120
+4	Љ ав®дҐ«м	20
+5	ѓаҐзЄ 	49
+6	ђЁб	37
+7	Њпб®	279
+8	‘ е а	50
+9	Љ Їгбв 	30
+10	ЊгЄ 	44
+11	‘ла	567
+12	Љ®«Ў б 	400
+13	џ©ж 	74
+14	џЎ«®ЄЁ	80
+15	Ѓ ­ ­л	61
+16	‚®¤ (1,5«)	38
+17	ЂЇҐ«мбЁ­л	77
+18	Џ®¬Ё¤®ал	120
+19	‘ « в	69
+20	’ў®а®Ј	260
+\.
+
+
+--
+-- TOC entry 2837 (class 0 OID 32792)
+-- Dependencies: 205
+-- Data for Name: store; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.store (id, lenta, metro, market, slay, pripay) FROM stdin;
+1	37	44	30	29	49
+2	56	69	46	99	76
+3	155	320	126	250	350
+4	45	55	12	25	36
+5	38	99	38	49	85
+6	76	88	65	36	87
+7	240	695	279	368	560
+8	56	64	38	81	74
+9	62	64	38	81	74
+10	25	59	31	34	45
+11	120	756	263	320	487
+12	320	950	632	370	487
+13	30	90	54	87	45
+14	67	97	23	45	54
+15	66	33	64	97	34
+16	57	34	64	97	34
+17	34	38	35	86	64
+18	140	220	154	354	410
+19	44	32	93	96	46
+20	340	134	245	456	256
+\.
+
+
+--
+-- TOC entry 2702 (class 2606 OID 16416)
+-- Name: buyer buyer_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.buyer
+    ADD CONSTRAINT buyer_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2708 (class 2606 OID 32804)
+-- Name: city city_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.city
+    ADD CONSTRAINT city_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2704 (class 2606 OID 24583)
+-- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.products
+    ADD CONSTRAINT products_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2706 (class 2606 OID 32796)
+-- Name: store store_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.store
+    ADD CONSTRAINT store_pkey PRIMARY KEY (id);
+
+
+-- Completed on 2021-05-15 02:03:53
+
+--
+-- PostgreSQL database dump complete
+--
+
